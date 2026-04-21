@@ -3,184 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>都向國際有限公司 Du Xiang International</title>
+
+<title>都向國際 Du Xiang International</title>
 
 <style>
-body { font-family: Arial; margin: 0; background: #f4f8ff; }
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial;
+    background: #eef2f6;
+    color: #1f2a37;
+}
 
-header { background: #0b3d91; color: white; padding: 30px; text-align: center; }
-
-nav { background: #1e5ed6; padding: 12px; text-align: center; }
-nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; }
-
-.banner { padding: 80px 20px; text-align: center; background: #e6f0ff; }
-
-.section { padding: 60px 20px; text-align: center; }
-
-.service-box {
-    display: inline-block;
-    width: 260px;
-    margin: 20px;
-    padding: 25px;
+/* NAV */
+.nav {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.contact { background: #0b3d91; color: white; padding: 60px 20px; }
-
-input, textarea {
-    width: 80%;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 6px;
-    border: none;
+.nav img {
+    height: 40px;
 }
 
-button {
-    background: #1e5ed6;
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4b5563;
+}
+
+.nav a:hover {
+    color: #2b4c7e;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #dfe6ef, #f7f9fc);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+}
+
+.hero p {
+    color: #6b7280;
+}
+
+.btn {
+    background: #2b4c7e;
     color: white;
-    padding: 12px 30px;
-    border: none;
+    padding: 12px 28px;
     border-radius: 6px;
-}
-
-.line-btn {
+    text-decoration: none;
     display: inline-block;
     margin-top: 20px;
-    background: #00c300;
-    padding: 12px 30px;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
 }
 
-.en {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-top: 6px;
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.contact .en {
-    color: #ddd;
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px;
+    display: inline-block;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
-.email-link {
-    color: #ffffff;
+/* LOGO牆 */
+.logo-wall {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+    width: 140px;
+    margin: 0 40px;
+    filter: grayscale(100%) opacity(0.6);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* 招募 */
+.career {
+    background: #e5ebf3;
+}
+
+/* 聯絡 */
+.contact {
+    background: white;
+    padding: 60px;
+}
+
+/* FOOTER */
+.footer {
+    background: #1f2a37;
+    color: #d1d5db;
+    padding: 30px;
+    text-align: center;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>
-        都向國際有限公司
-        <span class="en">Du Xiang International Co., Ltd.</span>
-    </h1>
-    <p>
-        都向國際，醫療新選擇！
-        <span class="en">Global Medical Solutions, Better Choices</span>
-    </p>
-</header>
-
-<nav>
-    <a href="#">首頁<br><span class="en">Home</span></a>
-    <a href="#">服務項目<br><span class="en">Services</span></a>
-    <a href="#">合作夥伴<br><span class="en">Partners</span></a>
-    <a href="#">聯絡我們<br><span class="en">Contact</span></a>
-</nav>
-
-<div class="banner">
-    <h2>
-        專業醫療器械供應與服務
-        <span class="en">Professional Medical Device Supply & Services</span>
-    </h2>
-    <p>
-        手術器械｜維修服務｜RFA射頻消融術
-        <span class="en">Surgical Instruments | Repair Services | RFA Solutions</span>
-    </p>
+<!-- NAV -->
+<div class="nav">
+    <img src="logo.png" alt="logo">
+    <div>
+        <a href="#">首頁 Home</a>
+        <a href="#">服務 Services</a>
+        <a href="#">合作 Partnership</a>
+        <a href="#">聯絡 Contact</a>
+    </div>
 </div>
 
+<!-- HERO -->
+<div class="hero">
+    <h2>醫療科技整合平台</h2>
+    <p>Medical Technology Integration Platform</p>
+
+    <a href="#contact" class="btn">立即諮詢 Contact Us</a>
+</div>
+
+<!-- SERVICES -->
 <div class="section">
-    <h2>
-        核心服務
-        <span class="en">Core Services</span>
-    </h2>
+    <h2>核心服務<br>Core Services</h2>
 
-    <div class="service-box">
-        <h3>
-            手術器械
-            <span class="en">Surgical Instruments</span>
-        </h3>
-        <p>
-            多品牌供應，靈活採購
-            <span class="en">Multi-brand sourcing with flexible procurement</span>
-        </p>
+    <div class="card">
+        醫療設備導入<br>
+        Medical Device Integration
     </div>
 
-    <div class="service-box">
-        <h3>
-            器械維修
-            <span class="en">Repair Services</span>
-        </h3>
-        <p>
-            專業維修與收件服務
-            <span class="en">Professional repair and collection services</span>
-        </p>
+    <div class="card">
+        國際品牌代理<br>
+        Global Distribution
     </div>
 
-    <div class="service-box">
-        <h3>
-            RFA消融術
-            <span class="en">Radiofrequency Ablation</span>
-        </h3>
-        <p>
-            設備整合與臨床支援
-            <span class="en">Equipment integration & clinical support</span>
-        </p>
+    <div class="card">
+        臨床技術支援<br>
+        Clinical Support
     </div>
 </div>
 
+<!-- LOGO牆 -->
 <div class="section">
-    <h2>
-        尋找合作夥伴
-        <span class="en">Looking for Partners</span>
-    </h2>
-    <p>
-        我們正在尋找國際醫療器械品牌、代理商及合作夥伴，共同拓展市場。
-        <span class="en">We are seeking global medical device brands and partners for market expansion.</span>
-    </p>
+    <h2>合作品牌<br>Trusted Partners</h2>
 
-    <form>
-        <input type="text" placeholder="公司名稱 Company"><br>
-        <input type="text" placeholder="聯絡人 Contact Person"><br>
-        <input type="text" placeholder="聯絡方式 Email / Phone"><br>
-        <textarea placeholder="合作內容簡述 Cooperation Details"></textarea><br>
-        <button type="submit">提交 Submit</button>
-    </form>
+    <div class="logo-wall">
+        <div class="logo-track">
+            <img src="logo1.png">
+            <img src="logo2.png">
+            <img src="logo3.png">
+            <img src="logo4.png">
+
+            <img src="logo1.png">
+            <img src="logo2.png">
+            <img src="logo3.png">
+            <img src="logo4.png">
+        </div>
+    </div>
 </div>
 
-<div class="section contact">
-    <h2>
-        聯絡我們
-        <span class="en">Contact Us</span>
-    </h2>
+<!-- 招募 -->
+<div class="section career">
+    <h2>尋找合作夥伴<br>Join Us</h2>
+    <p>誠徵醫療業務與區域代理夥伴<br>
+    We are looking for medical sales and regional partners</p>
+</div>
 
-    <p>📞 電話：07-9638813</p>
-    <p>📠 傳真：07-2135010</p>
-    <p>📧 Email：<a href="mailto:info@duxiang.net" class="email-link">info@duxiang.net</a></p>
+<!-- CONTACT -->
+<div class="contact" id="contact">
+    <h2>聯絡我們<br>Contact</h2>
+    <p>電話：07-9638813</p>
+    <p>傳真：07-2135010</p>
+    <p>Email：info@duxiang.net</p>
+    <p>LINE：@879jwyxk</p>
+</div>
 
-    <form>
-        <input type="text" placeholder="您的姓名 Name"><br>
-        <input type="text" placeholder="聯絡電話 Phone"><br>
-        <textarea placeholder="請輸入您的需求 Message"></textarea><br>
-        <button type="submit">送出 Submit</button>
-    </form>
-
-    <a href="https://line.me/R/ti/p/@879jwyxk" class="line-btn">LINE 聯絡</a>
-
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Du Xiang International Co., Ltd.
 </div>
 
 </body>
