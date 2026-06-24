@@ -93,8 +93,10 @@ nav a{
 
 .card-group{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .card{
@@ -151,6 +153,10 @@ nav{
     display:none;
 }
 
+.card-group{
+    grid-template-columns:1fr;
+}
+
 }
 
 </style>
@@ -161,7 +167,7 @@ nav{
 
 <header>
 
-<div class="logo">
+<div class="logo.jpg">
 DUXIANG
 </div>
 
