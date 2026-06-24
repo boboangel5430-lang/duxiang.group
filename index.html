@@ -3,206 +3,321 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>都向國際 Du Xiang International</title>
+<title>都向國際有限公司 | Du Xiang International</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", Arial;
-    background: #eef2f6;
-    color: #1f2a37;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* NAV */
-.nav {
-    background: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+body{
+    font-family:"Microsoft JhengHei",sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
 }
 
-.nav img {
-    height: 40px;
+header{
+    background:#0f2b46;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #4b5563;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#d4af37;
 }
 
-.nav a:hover {
-    color: #2b4c7e;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
 }
 
-/* HERO */
-.hero {
-    background: linear-gradient(135deg, #dfe6ef, #f7f9fc);
-    text-align: center;
-    padding: 100px 20px;
+.hero{
+    background:linear-gradient(rgba(15,43,70,.85),rgba(15,43,70,.85)),
+    url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:140px 20px;
 }
 
-.hero h2 {
-    font-size: 38px;
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
 }
 
-.hero p {
-    color: #6b7280;
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
 }
 
-.btn {
-    background: #2b4c7e;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#0f2b46;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
-/* SECTION */
-.section {
-    padding: 60px 20px;
-    text-align: center;
+.section{
+    padding:80px 10%;
 }
 
-/* CARD */
-.card {
-    background: white;
-    padding: 25px;
-    margin: 15px;
-    display: inline-block;
-    width: 260px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+.title{
+    text-align:center;
+    margin-bottom:50px;
 }
 
-/* LOGO牆 */
-.logo-wall {
-    overflow: hidden;
-    margin-top: 30px;
+.title h2{
+    color:#0f2b46;
+    font-size:38px;
 }
 
-.logo-track {
-    display: flex;
-    animation: scroll 25s linear infinite;
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
 }
 
-.logo-track img {
-    width: 140px;
-    margin: 0 40px;
-    filter: grayscale(100%) opacity(0.6);
+.card-group{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-/* 招募 */
-.career {
-    background: #e5ebf3;
+.card h3{
+    color:#0f2b46;
+    margin-bottom:15px;
 }
 
-/* 聯絡 */
-.contact {
-    background: white;
-    padding: 60px;
+.value{
+    background:#f6f8fb;
 }
 
-/* FOOTER */
-.footer {
-    background: #1f2a37;
-    color: #d1d5db;
-    padding: 30px;
-    text-align: center;
+.contact{
+    background:#0f2b46;
+    color:white;
 }
+
+.contact-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-box h2{
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#081a2c;
+    color:#ccc;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+nav{
+    display:none;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="nav">
-    <img src="logo.png" alt="logo">
-    <div>
-        <a href="#">首頁 Home</a>
-        <a href="#">服務 Services</a>
-        <a href="#">合作 Partnership</a>
-        <a href="#">聯絡 Contact</a>
-    </div>
+<header>
+
+<div class="logo">
+DUXIANG
 </div>
 
-<!-- HERO -->
-<div class="hero">
-    <h2>醫療科技整合平台</h2>
-    <p>Medical Technology Integration Platform</p>
+<nav>
+<a href="#about">關於我們</a>
+<a href="#service">服務項目</a>
+<a href="#value">核心價值</a>
+<a href="#contact">聯絡我們</a>
+</nav>
 
-    <a href="#contact" class="btn">立即諮詢 Contact Us</a>
+</header>
+
+<section class="hero">
+
+<h1>都向國際有限公司</h1>
+
+<p>
+全球醫療創新 × 專業臨床支援
+</p>
+
+<p>
+Global Medical Innovation．Connecting Clinical Excellence
+</p>
+
+<a href="#contact" class="btn">
+立即聯絡
+</a>
+
+</section>
+
+<section id="about" class="section">
+
+<div class="title">
+<h2>關於都向國際</h2>
 </div>
 
-<!-- SERVICES -->
-<div class="section">
-    <h2>核心服務<br>Core Services</h2>
+<div class="about">
 
-    <div class="card">
-        醫療設備導入<br>
-        Medical Device Integration
-    </div>
+<div>
 
-    <div class="card">
-        國際品牌代理<br>
-        Global Distribution
-    </div>
+<h3>專業醫療器材整合服務</h3>
 
-    <div class="card">
-        臨床技術支援<br>
-        Clinical Support
-    </div>
+<p>
+都向國際有限公司致力於引進國際先進醫療器材、
+手術器械及臨床技術解決方案，
+提供醫療院所專業且值得信賴的服務。
+</p>
+
 </div>
 
-<!-- LOGO牆 -->
-<div class="section">
-    <h2>合作品牌<br>Trusted Partners</h2>
+<div>
 
-    <div class="logo-wall">
-        <div class="logo-track">
-            <img src="logo1.png">
-            <img src="logo2.png">
-            <img src="logo3.png">
-            <img src="logo4.png">
+<h3>國際合作與市場拓展</h3>
 
-            <img src="logo1.png">
-            <img src="logo2.png">
-            <img src="logo3.png">
-            <img src="logo4.png">
-        </div>
-    </div>
+<p>
+協助國外品牌進入台灣市場，
+並積極拓展亞洲及中東市場合作機會，
+建立長期且穩定的夥伴關係。
+</p>
+
 </div>
 
-<!-- 招募 -->
-<div class="section career">
-    <h2>尋找合作夥伴<br>Join Us</h2>
-    <p>誠徵醫療業務與區域代理夥伴<br>
-    We are looking for medical sales and regional partners</p>
 </div>
 
-<!-- CONTACT -->
-<div class="contact" id="contact">
-    <h2>聯絡我們<br>Contact</h2>
-    <p>電話：07-9638813</p>
-    <p>傳真：07-2135010</p>
-    <p>Email：info@duxiang.net</p>
-    <p>LINE：@879jwyxk</p>
+</section>
+
+<section id="service" class="section">
+
+<div class="title">
+<h2>服務項目</h2>
 </div>
 
-<!-- FOOTER -->
-<div class="footer">
-    © 2026 Du Xiang International Co., Ltd.
+<div class="card-group">
+
+<div class="card">
+<h3>醫療器材經銷</h3>
+<p>專業醫療設備與耗材供應服務</p>
 </div>
+
+<div class="card">
+<h3>手術器械供應</h3>
+<p>各類外科手術器械整合方案</p>
+</div>
+
+<div class="card">
+<h3>射頻消融系統</h3>
+<p>RFA產品與臨床技術支援</p>
+</div>
+
+<div class="card">
+<h3>國際品牌代理</h3>
+<p>協助品牌進入台灣市場</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="value" class="section value">
+
+<div class="title">
+<h2>核心價值</h2>
+</div>
+
+<div class="card-group">
+
+<div class="card">
+<h3>Professional</h3>
+<p>專業服務</p>
+</div>
+
+<div class="card">
+<h3>Quality</h3>
+<p>品質至上</p>
+</div>
+
+<div class="card">
+<h3>Innovation</h3>
+<p>持續創新</p>
+</div>
+
+<div class="card">
+<h3>Global</h3>
+<p>國際視野</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<div class="contact-box">
+
+<h2>聯絡我們</h2>
+
+<p><strong>都向國際有限公司</strong></p>
+
+<p>地址：高雄市三民區鐵新二街112號203室</p>
+
+<p>電話：07-9638813</p>
+
+<p>傳真：07-2135010</p>
+
+<p>網站：www.duxiang.group</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Du Xiang International Co., Ltd.
+All Rights Reserved.
+
+</footer>
 
 </body>
 </html>
