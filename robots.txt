@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: /sitemap.xml
+Disallow: /admin/
+Disallow: /404
+Sitemap: https://duxiang.group/sitemap.xml
